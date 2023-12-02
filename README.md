@@ -2,6 +2,12 @@
 
 This provides flexible stack layout in SwiftUI.
 
+Optimizes the arrangement of items according to the aspect ratio of the parent view.
+<img src="./gif/aspect_ratio.gif" height="300px" />
+
+Optimize the arrangement of items according to the number of them.
+<img src="./gif/item_count.gif" height="300px" />
+
 ## Requirements
 
 - Development with Xcode 15.0.1+
