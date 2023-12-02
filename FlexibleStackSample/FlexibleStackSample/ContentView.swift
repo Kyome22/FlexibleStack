@@ -31,9 +31,9 @@ struct ContentView: View {
                 ForEach(array) { item in
                     Text(item.value)
                         .font(.system(size: 200))
+                        .multilineTextAlignment(.center)
                         .minimumScaleFactor(0.01)
-                        .scaledToFit()
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .aspectRatio(1.0, contentMode: .fit)
                         .border(item.color)
                 }
             }
