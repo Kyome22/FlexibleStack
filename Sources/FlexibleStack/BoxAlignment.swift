@@ -18,7 +18,7 @@ public enum BoxAlignment: Int {
     case bottom
     case bottomTrailing
 
-    func offset(with diff: CGSize) -> CGSize {
+    func origin(with diff: CGSize) -> CGSize {
         let s = 0.5 * CGFloat(rawValue % 3)
         let t = 0.5 * CGFloat(rawValue / 3)
         return CGSize(width: s * diff.width, height: t * diff.height)

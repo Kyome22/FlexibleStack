@@ -57,16 +57,17 @@ public struct FlexibleHStack: Layout {
         } else {
             idealSize = CGSize(width: w, height: w / subviewAspectRatio)
         }
-        let offset = alignment.offset(with: CGSize(
+        let origin = alignment.origin(with: CGSize(
             width: hCount * (w - idealSize.width),
             height: vCount * (h - idealSize.height)
         ))
-
+        let offset = CGSize(width: bounds.minX + origin.width + 0.5 * idealSize.width,
+                            height: bounds.minY + origin.height + 0.5 * idealSize.height)
         subviews.indices.forEach { index in
-            let x = bounds.minX + offset.width + CGFloat(index % columnsCount) * (idealSize.width + spacing)
-            let y = bounds.minY + offset.height + CGFloat(index / columnsCount) * (idealSize.height + spacing)
+            let x = offset.width + CGFloat(index % columnsCount) * (idealSize.width + spacing)
+            let y = offset.height + CGFloat(index / columnsCount) * (idealSize.height + spacing)
             subviews[index].place(at: CGPoint(x: x, y: y),
-                                  anchor: .topLeading,
+                                  anchor: .center,
                                   proposal: ProposedViewSize(idealSize))
         }
     }
