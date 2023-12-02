@@ -13,6 +13,7 @@
 		1C6243292B18EE4A0063C6AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6243282B18EE4A0063C6AF /* Preview Assets.xcassets */; };
 		1C6243312B18EEC90063C6AF /* FlexibleStack in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6243302B18EEC90063C6AF /* FlexibleStack */; };
 		1C6243332B18EF200063C6AF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243322B18EF200063C6AF /* Item.swift */; };
+		1C6243382B1B89B10063C6AF /* BoxAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1C6243252B18EE4A0063C6AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6243282B18EE4A0063C6AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C6243322B18EF200063C6AF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoxAlignment+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				1C6243212B18EE490063C6AF /* FlexibleStackSampleApp.swift */,
 				1C6243232B18EE490063C6AF /* ContentView.swift */,
 				1C6243322B18EF200063C6AF /* Item.swift */,
+				1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */,
 				1C6243252B18EE4A0063C6AF /* Assets.xcassets */,
 				1C6243272B18EE4A0063C6AF /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 				1C6243242B18EE490063C6AF /* ContentView.swift in Sources */,
 				1C6243332B18EF200063C6AF /* Item.swift in Sources */,
 				1C6243222B18EE490063C6AF /* FlexibleStackSampleApp.swift in Sources */,
+				1C6243382B1B89B10063C6AF /* BoxAlignment+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

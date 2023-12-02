@@ -11,6 +11,7 @@ import FlexibleStack
 struct ContentView: View {
     @State var ratio: CGFloat = 1.0
     @State var count: Int = 4
+    @State var alignment: BoxAlignment = .center
 
     var array: [Item] {
         (0 ..< count).map { i in
@@ -27,7 +28,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Spacer()
-            FlexibleHStack {
+            FlexibleVStack(alignment: alignment) {
                 ForEach(array) { item in
                     Text(item.value)
                         .font(.system(size: 200))
@@ -57,6 +58,18 @@ struct ContentView: View {
                     step: 1.0
                 )
                 Text("\(count)")
+            }
+            HStack {
+                Text("Alignment:")
+                Picker(selection: $alignment) {
+                    ForEach(BoxAlignment.allCases) { alignment in
+                        Text(alignment.label)
+                            .tag(alignment)
+                    }
+                } label: {
+                    EmptyView()
+                }
+                Spacer()
             }
         }
         .padding()
