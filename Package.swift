@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "FlexibleStack",
     platforms: [
-        .iOS(.v16)
+        .iOS("16.4")
     ],
     products: [
         .library(
@@ -14,6 +14,9 @@ let package = Package(
         )
     ],
     targets: [
-        .target(name: "FlexibleStack")
+        .target(
+            name: "FlexibleStack",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
+        )
     ]
 )
