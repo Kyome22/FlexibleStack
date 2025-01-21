@@ -8,20 +8,20 @@
 import SwiftUI
 import FlexibleStack
 
-extension BoxAlignment: Identifiable {
+extension BoxAlignment: @retroactive Identifiable {
     public var id: Int { rawValue }
 
     var label: String {
         switch self {
-        case .topLeading:     return "Top Leading"
-        case .top:            return "Top"
-        case .topTrailing:    return "Top Trailing"
-        case .leading:        return "Leading"
-        case .center:         return "Center"
-        case .trailing:       return "Trailing"
-        case .bottomLeading:  return "Bottom Leading"
-        case .bottom:         return "Bottom"
-        case .bottomTrailing: return "Bottom Trailing"
+        case .topLeading:     "Top Leading"
+        case .top:            "Top"
+        case .topTrailing:    "Top Trailing"
+        case .leading:        "Leading"
+        case .center:         "Center"
+        case .trailing:       "Trailing"
+        case .bottomLeading:  "Bottom Leading"
+        case .bottom:         "Bottom"
+        case .bottomTrailing: "Bottom Trailing"
         }
     }
 }

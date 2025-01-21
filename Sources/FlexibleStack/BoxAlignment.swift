@@ -20,15 +20,15 @@ public enum BoxAlignment: Int, CaseIterable {
 
     var anchor: UnitPoint {
         switch self {
-        case .topLeading:     return .topLeading
-        case .top:            return .top
-        case .topTrailing:    return .topTrailing
-        case .leading:        return .leading
-        case .center:         return .center
-        case .trailing:       return .trailing
-        case .bottomLeading:  return .bottomLeading
-        case .bottom:         return .bottom
-        case .bottomTrailing: return .bottomTrailing
+        case .topLeading:     .topLeading
+        case .top:            .top
+        case .topTrailing:    .topTrailing
+        case .leading:        .leading
+        case .center:         .center
+        case .trailing:       .trailing
+        case .bottomLeading:  .bottomLeading
+        case .bottom:         .bottom
+        case .bottomTrailing: .bottomTrailing
         }
     }
 

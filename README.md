@@ -10,9 +10,8 @@ Optimize the arrangement of items according to the number of them.
 
 ## Requirements
 
-- Development with Xcode 15.2+
-- Written in Swift 5.9
-- swift-tools-version: 5.9
+- Development with Xcode 16.2+
+- Written in Swift 6.0
 - Compatible with iOS 16.4+
 
 ## Usage
