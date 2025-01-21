@@ -10,7 +10,6 @@
 		1C6243222B18EE490063C6AF /* FlexibleStackSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243212B18EE490063C6AF /* FlexibleStackSampleApp.swift */; };
 		1C6243242B18EE490063C6AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243232B18EE490063C6AF /* ContentView.swift */; };
 		1C6243262B18EE4A0063C6AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6243252B18EE4A0063C6AF /* Assets.xcassets */; };
-		1C6243292B18EE4A0063C6AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6243282B18EE4A0063C6AF /* Preview Assets.xcassets */; };
 		1C6243312B18EEC90063C6AF /* FlexibleStack in Frameworks */ = {isa = PBXBuildFile; productRef = 1C6243302B18EEC90063C6AF /* FlexibleStack */; };
 		1C6243332B18EF200063C6AF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243322B18EF200063C6AF /* Item.swift */; };
 		1C6243382B1B89B10063C6AF /* BoxAlignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */; };
@@ -22,7 +21,6 @@
 		1C6243212B18EE490063C6AF /* FlexibleStackSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleStackSampleApp.swift; sourceTree = "<group>"; };
 		1C6243232B18EE490063C6AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C6243252B18EE4A0063C6AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C6243282B18EE4A0063C6AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C6243322B18EF200063C6AF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoxAlignment+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,17 +62,8 @@
 				1C6243322B18EF200063C6AF /* Item.swift */,
 				1C6243372B1B89B10063C6AF /* BoxAlignment+Extension.swift */,
 				1C6243252B18EE4A0063C6AF /* Assets.xcassets */,
-				1C6243272B18EE4A0063C6AF /* Preview Content */,
 			);
 			path = FlexibleStackSample;
-			sourceTree = "<group>";
-		};
-		1C6243272B18EE4A0063C6AF /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1C6243282B18EE4A0063C6AF /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6243292B18EE4A0063C6AF /* Preview Assets.xcassets in Resources */,
 				1C6243262B18EE4A0063C6AF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +273,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FlexibleStackSample/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,7 +294,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,10 +303,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FlexibleStackSample/Preview Content\"";
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -340,7 +324,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
